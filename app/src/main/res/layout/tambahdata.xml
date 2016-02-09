@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ee"
+            android:layout_below="@+id/tEnglish">
+
+
+            <EditText android:id="@+id/tambahEN" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="English"
+                android:inputType="text" android:maxLines="2"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ee"
+            android:id="@+id/view">
+
+            <EditText android:id="@+id/tambahInd" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Indonesia"
+                android:inputType="text" android:maxLines="2"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="AKSI"
+            android:id="@+id/bAksi"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
